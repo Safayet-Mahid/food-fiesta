@@ -47,6 +47,29 @@ header .container {
 .socials i {
   margin: 0 0.5em;
 }
+
+/* top bar responsive  */
+
+@media screen and (max-width:576px) {
+  header .container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  header .socials i{
+    margin: .5em 1.25em;
+  }
+
+  .logsec{
+    padding: 0 .75em;
+  }
+  .logsec p{
+    display: none;
+  }
+ .login span{
+    display: none
+  };
+}
+
 /* =================== */
 /* =======Navigation bar===== */
 
@@ -75,6 +98,17 @@ header .container {
 }
 .info {
   margin: 0 0.75em;
+}
+
+
+@media screen and (max-width:576px) {
+  .topbar .working-hour, .topbar .contact{
+    display: none;
+  }
+  .topbar .logo{
+    text-align: center;
+    margin: 1em auto;
+  }
 }
 /* ========== */
 /* =====nab bar==== */
@@ -121,6 +155,17 @@ header .container {
   bottom: -1px;
   z-index: -1;
 } */
+
+
+@media screen and (max-width:576px) {
+  .navbar{
+    display: block;
+    text-align: end;
+  }
+}
+
+
+
 /* ============================== */
 /* ===============hero================= */
 
@@ -134,7 +179,6 @@ header .container {
 }
 .hero .container {
   display: flex;
-
   justify-content: flex-start;
   align-items: center;
   margin: 2em auto;
@@ -197,6 +241,26 @@ h5 {
 }
 h5 span {
   padding: 0 0.5em;
+}
+
+@media screen and (max-width:576px) {
+  .hero-text h4{
+    display: none;
+  }
+  .hero .container{
+    flex-direction: column;
+    /* border: 5px solid red; */
+  }
+  .hero{
+    height: auto;
+  }
+  .hero-image{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 2.5em auto;
+    overflow: hidden;
+  }
 }
 /* ==================================== */
 /* =======================slider card========================= */
@@ -325,6 +389,16 @@ small {
   margin-top: 1em;
 }
 
+@media screen and (max-width:576px) {
+  #about .container {
+    flex-direction: column;
+  }
+  .about-image img{
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+
 /* ===============services====== */
 .service-header {
   text-align: center;
@@ -383,6 +457,12 @@ small {
   color: gold;
 }
 
+
+@media screen and (max-width:576px) {
+  .service .container {
+    flex-direction: column;
+  }
+}
 /* ==============deals========= */
 
 .deals {
@@ -431,6 +511,16 @@ small {
 .time-box p:first-child {
   font-size: 2em;
   font-weight: 500;
+}
+
+@media screen and (max-width:576px) {
+  .deal-wrapper{
+    flex-wrap: wrap;
+  }
+
+  .time-box{
+    padding: 2em;
+  }
 }
 /* ====================blog============== */
 .blog {
@@ -481,6 +571,12 @@ small {
 .blog-content h3 {
   margin: 0.75em 0;
   font-weight: 700;
+}
+
+@media screen and (max-width:576px) {
+  .blog-wrapper{
+    flex-direction: column;
+  }
 }
 /* ===================== */
 /* =======newsletter========= */
@@ -535,6 +631,12 @@ small {
   font-size: 1em;
   padding: 0.5em 0.25em;
 }
+@media screen and (max-width:576px) {
+  .newsletter-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* ============contact================= */
 .contact-section {
   display: flex;
@@ -544,6 +646,7 @@ small {
 .contact-text {
   flex: 1;
   padding-bottom: 2.5em;
+
 }
 .map {
   flex: 1;
@@ -555,10 +658,10 @@ small {
   display: flex;
 
   padding: 1em 0;
+
 }
 .contact-card {
   display: flex;
-  /* justify-content: center; */
   padding: 0 35%;
 }
 .contact-logo {
@@ -579,6 +682,16 @@ small {
   background-repeat: no-repeat;
   background-position: center;
   bottom: -32px;
+}
+
+@media screen and (max-width:576px) {
+  .contact-section{
+    flex-direction: column;
+  }
+ 
+  .contact-card{
+    padding: 0 10%;
+  }
 }
 /* =======================footer================== */
 
