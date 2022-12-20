@@ -69,6 +69,11 @@ header .container {
     display: none
   };
 }
+@media screen and (max-width:970px) {
+  .logsec p{
+    display: none;
+  }
+}
 
 /* =================== */
 /* =======Navigation bar===== */
@@ -109,7 +114,11 @@ header .container {
     text-align: center;
     margin: 1em auto;
   }
+
 }
+
+
+
 /* ========== */
 /* =====nab bar==== */
 .navbar {
@@ -161,6 +170,26 @@ header .container {
   .navbar{
     display: block;
     text-align: end;
+    height: 50px;
+    overflow-y: scroll;
+  }
+  .navbar::-webkit-scrollbar{
+    background-color: red;
+    background-image: url("");
+    width: 5px;
+  }
+  .navbar::-webkit-scrollbar-track {
+    background-color: darkgrey;
+  
+  }
+  .navbar::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgb(40, 55, 95);
+}
+}
+@media screen and (max-width:970px) {
+  .nav-item{
+    margin: 0 .5em;
   }
 }
 
@@ -254,6 +283,16 @@ h5 span {
   .hero{
     height: auto;
   }
+  .hero-image{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 2.5em auto;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width:992px) {
   .hero-image{
     position: relative;
     top: 0;
@@ -389,7 +428,7 @@ small {
   margin-top: 1em;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:970px) {
   #about .container {
     flex-direction: column;
   }
@@ -462,6 +501,12 @@ small {
   .service .container {
     flex-direction: column;
   }
+}
+@media screen and (max-width:970px) {
+  .service .container {
+    flex-wrap: wrap;
+  }
+
 }
 /* ==============deals========= */
 
@@ -692,6 +737,7 @@ small {
   .contact-card{
     padding: 0 10%;
   }
+ 
 }
 /* =======================footer================== */
 
@@ -755,5 +801,33 @@ small {
   margin-left: 0.25em;
   font-size: 1em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width:576px) {
+  .footer .container {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width:576px) and (max-width:970px) {
+  
+  .footer .container {
+    flex-wrap: wrap;
+  }
+  .footer-coloum{
+  text-align: start;
+  }
+  .footer-coloum li i {
+    display: none;
+  }
+  .insta-photo{
+      width: 450px;
+      margin: 1em auto;
+  }
+  .insta h4{
+    text-align: center;
+  }
+  .center-btn{
+    text-align: start;
+  }
 }
 /* ================test========== */
